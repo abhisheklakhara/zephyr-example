@@ -1,0 +1,8 @@
+#create a new option in menuconfig
+
+config SAY_HELLO
+	bool "Basic print to test the console"
+	default n
+	depends on PRINTK
+	help
+		Adds say_hello() function to print a basic message to the console
